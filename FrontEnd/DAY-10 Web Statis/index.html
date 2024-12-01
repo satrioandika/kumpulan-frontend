@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--? Styles CSS -->
+		<link rel="stylesheet" href="./Home-jaki_satrio/style.css" />
+
+		<!--? Boostrap -->
+		<link rel="stylesheet" href="./boostrap/dist/css/bootstrap.min.css"/>
+
+		<!--? Font Googleapis -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!--? Icon Awesome -->
+		<script
+			src="https://kit.fontawesome.com/c0ad9aaa27.js"
+			crossorigin="anonymous"
+		></script>
+
+		<title>Home | Astra</title>
+	</head>
+	<body>
+		<header>
+			<!--* Navigasi-->
+			<nav
+				id="navbar"
+				class="navbar navbar-expand-lg  shadow fixed-top px-0 py-0 mb-2"
+			>
+				<div class="container">
+					<a class="navbar-brand" href="#home">
+						<img
+							class="img-fluid"
+							src="./assets/img/Astraworld-logo.png"
+							alt="astra-world"
+							width="209"
+							height="48"
+						/>
+					</a>
+					<div
+						class="collapse navbar-collapse justify-content-md-end"
+						id="navbarNav"
+					>
+						<ul class="navbar-nav nav gap-3">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./About-dina/about.html">About Us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./Service-rapid/OurService.html">Our Service</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./Home-jaki_satrio/struktur.html">Stuktur</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./Home-jaki_satrio/contact.html">Contact Us</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- * Navigasi END-->
+		</header>
+
+		<main>
+			<!--* Corousel -->
+			<div
+				id="carouselExampleInterval"
+				class="carousel slide"
+				data-bs-ride="carousel"
+				style="margin-top: 83px"
+			>
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="2000">
+						<img
+							src="./assets/img/Banner-1.jpg"
+							class="d-block w-100"
+							alt="..."
+							style="width: 1300px"
+						/>
+					</div>
+					<div class="carousel-item" data-bs-interval="2000">
+						<img
+							src="./assets/img/Banner-2.png"
+							class="d-block w-100"
+							alt="..."
+							style="width: 1300px"
+						/>
+					</div>
+					<div class="carousel-item" data-bs-interval="2000">
+						<img
+							src="./assets/img/Banner-3.jpg"
+							class="d-block w-100"
+							alt="..."
+							style="width: 1300px"
+						/>
+					</div>
+				</div>
+				<button
+					class="carousel-control-prev"
+					type="button"
+					data-bs-target="#carouselExampleInterval"
+					data-bs-slide="prev"
+				>
+					<span
+						class="carousel-control-prev-icon"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button
+					class="carousel-control-next"
+					type="button"
+					data-bs-target="#carouselExampleInterval"
+					data-bs-slide="next"
+				>
+					<span
+						class="carousel-control-next-icon"
+						aria-hidden="true"
+					></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+			<!--* Corousel END-->
+
+			<!--* THUMB HOME -->
+			<div class="thumb-home pt-5 pb-5">
+				<div class="title-2">
+					<h1>layanan AstraWorld</h1>
+					<h2>AstraWorld adalah Partner Berkendara Anda</h2>
+					<p>
+						AstraWorld memberikan dukungan dan nilai tambah bagi pemilik
+						mobil Toyota, Daihatsu, Isuzu, BMW & Peugeot
+					</p>
+				</div>
+
+				<!--* container card  -->
+				<div class="card-contain container-fluid d-flex flex-row justify-content-center gap-4 pt-4">
+					<!--* card -->
+					<div class="card custom-card">
+						<i
+							class="fa-solid fa-face-smile fa-6x p-2 pt-3"
+							style="color: #45a3d8"
+						></i>
+						<div class="card-body d-flex flex-column">
+							<h5>Booking Sekarang</h5>
+							<p class="card-text" style="width: 100%;">
+								AstraWorld dapat membantu Anda mereservasi waktu service di bengkel resmi yang Anda pilih. Lakukan Booking Service melalui 1500898.
+							</p>
+							<a href="./booking/checkout.html" class="btn btn-outline-info" width: 100px;>Booking Sekarang</a>
+						</div>
+					</div>
+
+					<div class="card custom-card">
+						<i class="fa-solid fa-bell fa-rotate-by fa-6x p-2 pt-3" style="color: #45a3d8; --fa-rotate-angle: -45deg;""></i>
+						<div class="card-body d-flex flex-column">
+							<h5>Reminder Service</h5>
+							<p class="card-text" style="width: 100%;">
+								AstraWorld membantu mengingatkan pemilik mobil mengenai jadwal service berkala untuk mobil Toyota, Daihatsu dan Isuzu, serta informasi produk dan kegiatan promosi.
+							</p>
+						</div>
+					</div>
+
+					<div class="card custom-card">
+						<i class="fa-regular fa-credit-card fa-6x p-2 pt-3" style="color: #45a3d8;"></i>
+						<div class="card-body d-flex flex-column">
+							<h5>Diskon Langsung</h5>
+							<p class="card-text" style="width: 100%;">
+								AstraWorld bekerjasama dengan lini bisnis Astra lainnya untuk menghadirkan diskon langsung khusus untuk member AstraWorld.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--* THUMB HOME END-->
+
+			<!--* THUMB BULAT -->
+			<div class="bg-body-tertiary">
+				<div class="thumb-bulat">
+					<h2>AstraWorld menyediakan layanan darurat berkualitas :</h2>
+					<p>
+						Bagi pemilik kendaraan Toyota/Daihatsu/Isuzu/BMW/Peugeot yang mengalami kendala atau situasi darurat di jalan, seperti layanan derek/towing mobil mogok, kunci tertinggal di dalam mobil,
+						ban kempes, dan sebagainya. Layanan diberikan GRATIS selama 5 tahun dari tanggal pembelian, untuk kendaraan yang terdaftar sebagai anggota serta sesuai dengan syarat dan ketentuan yang berlaku. 					
+					</p>
+					
+					<!--* none border none -->
+					<div class="card-contain container-fluid d-flex flex-row justify-content-center gap-5 pb-5">
+						<div class="card mt-5 custom-card-bulat">
+							<img src="./assets/img/mobil-gendong.png" alt="" class="w-70 m-auto">
+							<div class="card-body">
+								<h5>Mobil Gendong </h5>
+								<p class="card-text" style="width: 100%;">
+									Bila mobil Anda butuh dibawa ke bengkel resmi terdekat.
+								</p>
+							</div>
+						</div>
+						<div class="card mt-5 custom-card-bulat">
+							<img src="./assets/img/ganti-ban.png" alt="" class="w-70 m-auto">
+							<div class="card-body">
+								<h5>Ganti Ban</h5>
+								<p class="card-text" style="width: 100%;">
+									Bila Anda butuh bantuan untuk menggantikan ban yang kempes.
+								</p>
+							</div>
+						</div>
+						<div class="card mt-5 custom-card-bulat">
+							<img src="./assets/img/aki-drop.png" alt="" class="w-70 m-auto">
+							<div class="card-body">
+								<h5>Aki Drop</h5>
+								<p class="card-text" style="width: 100%;">
+									Layanan jumper aki bagi kendaraan Anda yang mengalami aki soak.
+								</p>
+							</div>
+						</div>
+						<div class="card mt-5 custom-card-bulat">
+							<img src="./assets/img/kunci-tertinggal.png" alt="" class="w-70 m-auto">
+							<div class="card-body">
+								<h5>Kunci Tertinggal</h5>
+								<p class="card-text" style="width: 100%;">
+									Bila mobil Anda terkunci dari dalam dan butuh dibukakan.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--* THUMB BULAT END-->
+
+			<!--* PARTNER HOME  -->
+			<div id="partner-home">
+				<h2>AstraWorld menyediakan layanan untuk :</h2>
+			</div>
+			<!--* PARTNER HOME END  -->
+		</main>
+
+		<footer class="container-fluid py-5 px-0 pb-0" style="background-color: #121A27; border-radius: 0 50px 0 0;">
+			<div class="container">
+				<div class="row gx-5">
+					<div class="col-6">
+						<div class="mb-5">
+							<img src="./assets/img/logo-footer.png" alt="" width="300px">
+							<p class="pt-3" style="color: #fff;">AstraWorld berdiri di Jakarta, pada 2 Februari 2002 sebagai unit bisnis PT Astra International Tbk yang bertujuan memberikan nilai tambah bagi pelanggan  PT Astra International Tbk. Nilai tambah tersebut diberikan dalam bentuk layanan-layanan yang menjadikan saat-saat memiliki dan mengendarai mobil menjadi semakin aman dan nyaman, sehingga pelanggan merasakan "Peace of Mind on the Road"</p>
+						</div>
+					</div>
+
+					<div class="col-6">
+						<div class="mb-5 mt-3">
+							<h1 style="color: #fff;">Sosial Media</h1>
+							<div class="d-flex gap-4 cos-icon">
+								<i class="fa-brands fa-whatsapp fa-3x" onclick="window.location.href='https://wa.me/+62895381500898'"></i>
+								<i class="fa-brands fa-instagram fa-3x" onclick="window.location.href='https://www.instagram.com/astraworld/'"></i>
+								<i class="fa-brands fa-square-facebook fa-3x" onclick="window.location.href='https://www.facebook.com/astraworld/'"></i>
+								<i class="fa-brands fa-square-x-twitter fa-3x" onclick="window.location.href='https://x.com/AstraWorld'"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="custel-hacip">
+				<p>Hak Cipta &copy; 2024</p>
+			</div>
+		</footer>
+
+		<!--* Script Boostrap -->
+		<script src="./boostrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- SCRIPT -->
+		<script>
+			window.addEventListener("scroll", function () {
+			const navbar = document.getElementById("navbar");
+			if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+				navbar.classList.add("scrolled");
+			}else{
+				navbar.classList.remove("scrolled")
+			}
+			});
+		</script>
+	</body>
+</html>
+

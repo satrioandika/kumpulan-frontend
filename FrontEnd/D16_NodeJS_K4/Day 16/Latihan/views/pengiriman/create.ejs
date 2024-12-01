@@ -1,0 +1,73 @@
+<main role="main" class="container">
+    <h1>Tambah Data Pengiriman</h1>
+    <div class="card shadow col-md-6">
+        <div class="card-header">
+            <h4 class="text-primary">Detail Pengiriman</h4>
+        </div>
+        <div class="card-body">
+            <form action="/AddPengiriman" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="id_pengiriman" class="form-label">ID_pengiriman</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="id_pengiriman" id="id_pengiriman" placeholder="Masukkan ID" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="qty" class="form-label">Qty</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="qty" id="qty" placeholder="Masukkan Berat Paket" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="customer" class="form-label">Customer</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="customer" id="customer" placeholder="Masukkan Nama Customer" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="alamat" class="form-label">Alamat</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="alamat" id="alamat" placeholder="Masukkan Alamat" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="tanggal_pengiriman" class="form-label">Tanggal Pengiriman</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="tanggal_pengiriman" id="tanggal_pengiriman" placeholder="Masukkan Tanggal Pengiriman" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="tanggal_diterima" class="form-label">Tanggal Penerimaan</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="tanggal_diterima" id="tanggal_diterima" placeholder="Masukkan Tanggal Penerimaan" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="status" class="form-label">Status</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="status" id="status" placeholder="Status Paket" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="submit" value="Kirim" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,141 @@
+<%- include('../template/head') %>
+
+                <div class="container-fluid mb-5">
+                  <a href="/paket" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> KEMBALI</a>
+
+                  <div class="card mt-3 mb-3">
+                    <div class="card shadow-mb4">
+                      <div class="card-header bg-primary text-light"><h4>Edit Paket</h4></div>
+                      <div class="card-body">
+                        <form action="/paket/update/<%= pakets.id_paket %>" method="post" id="form-paket">
+                          <div class="row mb-3">
+                            <div class="col-md-8">
+                              <input type="hidden" name="id_paket" id="id_paket" class="form-control" value="<%= pakets.id_paket %>" readonly />
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-md-3">
+                              <label for="id_vendor">ID Vendor</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" name="id_vendor" id="id_vendor" class="form-control" value="<%= pakets.id_vendor %>" />
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-md-3">
+                              <label for="nama">Nama</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" name="nama" id="nama" class="form-control" value="<%= pakets.nama %>" />
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-md-3">
+                              <label for="deskripsi">Deskripsi</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" name="deskripsi" id="deskripsi" class="form-control" value="<%= pakets.deskripsi %>" />
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-md-3 mb-3">
+                              <label for="berat">Berat</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" name="berat" id="berat" class="form-control" value="<%= pakets.berat %>" />
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-md-3 mb-3">
+                              <label for="dimensi">Dimensi</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" name="dimensi" id="dimensi" class="form-control" value="<%= pakets.dimensi %>" />
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-md-3 mb-3">
+                              <label for="harga">Harga</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" name="harga" id="harga" class="form-control" value="<%= pakets.harga %>" />
+                            </div>
+                          </div>
+                          <div class="row mb-3">
+                            <div class="col-md-3 mb-3">
+                              <label for="status">Status</label>
+                            </div>
+                            <div class="col-md-8">
+                              <input type="text" name="status" id="status" class="form-control" value="<%= pakets.status %>" />
+                            </div>
+                          </div>
+                          <input type="submit" name="submit" id="btn-add" class="btn btn-primary" />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Main Content -->
+  
+              <!-- Footer -->
+              <footer class="sticky-footer bg-white">
+                  <div class="container my-auto">
+                      <div class="copyright text-center my-auto">
+                          <span>Copyright &copy; Abadi Jaya</span>
+                      </div>
+                  </div>
+              </footer>
+              <!-- End of Footer -->
+  
+          </div>
+          <!-- End of Content Wrapper -->
+  
+      </div>
+      <!-- End of Page Wrapper -->
+  
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+          <i class="fas fa-angle-up"></i>
+      </a>
+  
+      <!-- Logout Modal-->
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                  <div class="modal-footer">
+                      <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                      <a class="btn btn-primary" href="login.html">Logout</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Bootstrap core JavaScript-->
+      <script src="../../bootstrap/vendor/jquery/jquery.min.js"></script>
+      <script src="../../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+      <!-- Core plugin JavaScript-->
+      <script src="../../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+      <!-- Custom scripts for all pages-->
+      <script src="../../bootstrap/js/sb-admin-2.min.js"></script>
+  
+      <!-- Page level plugins -->
+      <script src="../../bootstrap/vendor/chart.js/Chart.min.js"></script>
+  
+      <!-- Page level custom scripts -->
+      <script src="../../bootstrap/js/demo/chart-area-demo.js"></script>
+      <script src="../../bootstrap/js/demo/chart-pie-demo.js"></script>
+  
+  </body>
+  
+</html>

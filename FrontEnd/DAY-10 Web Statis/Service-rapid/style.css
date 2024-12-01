@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+.main {
+  margin-top: 80px;
+  width: 100%;
+  height: 388px;
+  background: url(assets/img/bg-service.jpg) no-repeat top 60px center fixed;
+  background-size: auto;
+  background-size: contain;
+}
+
+.contact {
+  background: #1d398f url(assets/img/service-icn.jpg) no-repeat left center;
+  height: 80px;
+  width: 420px;
+  margin: 0 auto;
+  padding: 20px 5px 10px 105px ;
+  font-size: 23px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  top: 215px;
+  letter-spacing: 1px;
+}
+
+.thumb-home {
+  padding-top: 50px !important;
+  width: 1140px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.thumb-home h1 {
+  font-size: 14px;
+  font-weight: bold !important;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  padding: 7px;
+}
+
+.thumb-home h2 {
+  font-size: 30px;
+  font-weight: bold !important;
+  color: #4d4d4d;
+}
+
+.thumb-home p {
+  font-size: 14px;
+  font-style: italic;
+  color: #888888;
+  width: 40%;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.centered-image {
+  align-self: center;
+}
+
+.thumb-bulat {
+  width: 1140px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.thumb-bulat h2 {
+  padding-top: 60px;
+  font-size: 30px;
+  font-weight: bold !important;
+  color: #4d4d4d;
+  margin-bottom: 40px;
+}
+
+.thumb-bulat p {
+  font-size: 14px;
+  font-style: italic;
+  color: #888888;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.thumb-service h1{
+  font-weight: bold;
+  color: #4d4d4d;
+}
+.thumb-service {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 200px;
+  background-color: #dcdcdc;
+}
+
+.thumb-service h2 {
+  padding-top: 60px;
+  font-size: 30px;
+  font-weight: bold !important;
+  color: #4d4d4d;
+  margin-bottom: 40px;
+}
+
+.thumb-service p {
+  font-size: 14px;
+  font-style: italic;
+  color: #6b6b6b;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.gambar {
+  width: 110px;
+  height: 110px;
+  margin-right: 40px;
+  border-radius: 5px;
+}
+
+.headline {
+  font-size: 24px; /* Ukuran font headline */
+  font-weight: bold; /* Ketebalan font */
+  margin-bottom: 10px; /* Jarak antara headline dan teks */
+}
+
+.custom-card {
+  margin-top: 80px;
+  padding-bottom: 20px;
+  float: left;
+  /* width: 25%; */
+  width: 100%;
+  border: none !important;
+  cursor: pointer;
+}
+
+.card-serv .card-body{
+  margin-top: 20px; 
+  /* padding-bottom: 20px; */
+  padding: 20px;
+  float: left; 
+  width: 100%; 
+  height: 270px; 
+  cursor: pointer;
+  border: 1px solid #595959;
+}
+
+#partner-home {
+  padding-top: 10px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 240px;
+  margin-top: 80px;
+  background: url(assets/img/partner-awo.png) no-repeat center;
+}
+
+#partner-home h2 {
+  font-size: 30px;
+  font-weight: bold !important;
+  color: #4d4d4d;
+}
+
+/* Style Footer */
+.custel-hacip {
+  text-align: center;
+  background-color: #121a27;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid;
+}

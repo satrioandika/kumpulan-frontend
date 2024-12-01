@@ -1,0 +1,28 @@
+<main role="main" class="container">
+    <h2>Daftar Provinsi</h2>
+    <a href="/AddProvinsi" class="btn btn-primary">Tambah Provinsi</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Kode Provinsi</th>
+                <th scope="col">Nama</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% provinsis.forEach(provinsi=> { %>
+                <tr>
+                    <td>
+                        <%= provinsi.kode %>
+                    </td>
+                    <td>
+                        <%= provinsi.nama %>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i> Edit</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>

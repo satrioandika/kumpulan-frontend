@@ -1,0 +1,37 @@
+<main role="main" class="container">
+    <h2>Daftar Vendor</h2>
+    <a href="/AddVendor" class="btn btn-primary">Tambah Vendor</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nama</th>
+                <th scope="col">Pegawai</th>
+                <th scope="col">Kontak</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">Tindakan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% vendors.forEach(vendor=> { %>
+                <tr>
+                    <td>
+                        <%= vendor.nama %>
+                    </td>
+                    <td>
+                        <%= vendor.pegawai %>
+                    </td>
+                    <td>
+                        <%= vendor.kontak %>
+                    </td>
+                    <td>
+                        <%= vendor.alamat %>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i> Edit</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>

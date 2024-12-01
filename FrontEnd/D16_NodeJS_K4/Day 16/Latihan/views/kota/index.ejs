@@ -1,0 +1,37 @@
+<main role="main" class="container">
+    <h2>Daftar Kota</h2>
+    <a href="/AddKota" class="btn btn-primary">Tambah Kota</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Kode Kota</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Jenis</th>
+                <th scope="col">Provinsi</th>
+                <th scope="col">Tindakan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% kotas.forEach(kota=> { %>
+                <tr>
+                    <td>
+                        <%= kota.kode_kota %>
+                    </td>
+                    <td>
+                        <%= kota.nama %>
+                    </td>
+                    <td>
+                        <%= kota.jenis %>
+                    </td>
+                    <td>
+                        <%= kota.id_provinsi %>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i> Edit</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>

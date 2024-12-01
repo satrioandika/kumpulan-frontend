@@ -1,0 +1,41 @@
+<main role="main" class="container">
+    <h2>Daftar Biaya</h2>
+    <a href="/AddBiaya" class="btn btn-primary">Tambah Biaya</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id_biaya</th>
+                <th scope="col">Jenis Pengiriman</th>
+                <th scope="col">Berat Minimal</th>
+                <th scope="col">Berat Maksimal</th>
+                <th scope="col">Biaya</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% biayas.forEach(biaya=> { %>
+                <tr>
+                    <td>
+                        <%= biaya.id_biaya %>
+                    </td>
+                    <td>
+                        <%= biaya.jenis_pengiriman %>
+                    </td>
+                    <td>
+                        <%= biaya.berat_min %>
+                    </td>
+                    <td>
+                        <%= biaya.berat_max %>
+                    </td>
+                    
+                    <td>
+                        <%= biaya.biaya %>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i> Edit</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>

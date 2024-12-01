@@ -1,0 +1,173 @@
+<%- include('../template/head') %>
+
+                <div class="container-fluid mb-5">
+                    <a href="/pengiriman" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> KEMBALI</a>
+                    
+                  <div class="card mt-3 mb-3">
+                    <div class="card shadow-mb4">
+                      <div class="card-header bg-primary text-light"><h4>Edit Pengiriman</h4></div>
+                      <div class="card-body">
+                        <form action="/pengiriman/update/<%= pengirimans.id_pengiriman %>" method="post" id="form-pengiriman">
+                          <div class="row mb-3">
+                            <div class="col-md-8">
+                                <input type="hidden" name="id_pengiriman" id="id_pengiriman" class="form-control" value="<%= pengirimans.id_pengiriman %>" readonly />
+                            </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label for="id_paket">ID Paket</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="id_paket" id="id_paket" class="form-control" value="<%= pengirimans.id_paket %>" required />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label for="qty">Quantity </label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text " name="qty" id="qty" class="form-control" value="<%= pengirimans.qty %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="id_biaya">ID Biaya</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="id_biaya" id="id_biaya" class="form-control" value="<%= pengirimans.id_biaya %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="id_customer">ID Customer</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="id_customer" id="id_customer" class="form-control" value="<%= pengirimans.id_customer %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="id_provinsi">ID Provinsi</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="id_provinsi" id="id_provinsi" class="form-control" value="<%= pengirimans.id_provinsi %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="id_kota">ID Kota</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="id_kota" id="id_kota" class="form-control" value="<%= pengirimans.id_kota %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="detail_alamat">Detail Alamat</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="detail_alamat" id="detail_alamat" class="form-control" value="<%= pengirimans.detail_alamat %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="kode_pos">Kode Pos</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="kode_pos" id="kode_pos" class="form-control" value="<%= pengirimans.kode_pos %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="tanggal_pengiriman">Tanggal Pengiriman</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="date" name="tanggal_pengiriman" id="tanggal_pengiriman" class="form-control" value="<%= pengirimans.tanggal_pengiriman %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="tanggal_diterima">Tanggal Diterima</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="date" name="tanggal_diterima" id="tanggal_diterima" class="form-control" value="<%= pengirimans.tanggal_diterima %>" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="status_pengiriman">Status Pengiriman</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="status_pengiriman" id="status_pengiriman" class="form-control" value="<%= pengirimans.status_pengiriman %>" />
+                                </div>
+                            </div>
+                          <input type="submit" name="submit" id="btn-add" class="btn btn-primary" />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Main Content -->
+  
+              <!-- Footer -->
+              <footer class="sticky-footer bg-white">
+                  <div class="container my-auto">
+                      <div class="copyright text-center my-auto">
+                          <span>Copyright &copy; Abadi Jaya</span>
+                      </div>
+                  </div>
+              </footer>
+              <!-- End of Footer -->
+  
+          </div>
+          <!-- End of Content Wrapper -->
+  
+      </div>
+      <!-- End of Page Wrapper -->
+  
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+          <i class="fas fa-angle-up"></i>
+      </a>
+  
+      <!-- Logout Modal-->
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                  <div class="modal-footer">
+                      <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                      <a class="btn btn-primary" href="login.html">Logout</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Bootstrap core JavaScript-->
+      <script src="../../bootstrap/vendor/jquery/jquery.min.js"></script>
+      <script src="../../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+      <!-- Core plugin JavaScript-->
+      <script src="../../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+      <!-- Custom scripts for all pages-->
+      <script src="../../bootstrap/js/sb-admin-2.min.js"></script>
+  
+      <!-- Page level plugins -->
+      <script src="../../bootstrap/vendor/chart.js/Chart.min.js"></script>
+  
+      <!-- Page level custom scripts -->
+      <script src="../../bootstrap/js/demo/chart-area-demo.js"></script>
+      <script src="../../bootstrap/js/demo/chart-pie-demo.js"></script>
+  
+  </body>
+  
+</html>

@@ -1,0 +1,199 @@
+<%- include('../template/head') %>
+
+                <div class="container-fluid mb-5">
+                    <a href="/pengiriman" class="btn btn-secondary"><i class="fa fa-arrow-left"></i> KEMBALI</a>
+
+                  <div class="card mt-3 mb-3">
+                    <div class="card shadow-mb4">
+                      <div class="card-header bg-primary text-light"><h4>Tambah Pengiriman</h4></div>
+                      <div class="card-body">
+                        <form action="/pengiriman/insert" method="post" id="form-pengiriman">
+                            <div class="row mb-3">
+                                <div class="col-md-8">
+                                    <input type="hidden" name="id_pengiriman" id="id_pengiriman" class="form-control" readonly />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label for="id_paket">Paket</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select name="id_paket" id="id_paket" class="form-control" required>
+                                        <option value="">--- Pilih Paket ---</option>
+                                        <% paket.forEach(p => { %>
+                                            <option value="<%= p.id_paket %>"><%= p.nama %></option>
+                                        <% }); %>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label for="qty">Quantity </label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text " name="qty" id="qty" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="id_biaya">Biaya</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select name="id_biaya" id="id_biaya" class="form-control">
+                                        <option value="">--- Pilih Biaya Pengiriman ---</option>
+                                        <% biaya.forEach(b => { %>
+                                            <option value="<%= b.id_biaya %>"><%= b.biaya %></option>
+                                        <% }); %>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="id_customer">Customer</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select name="id_customer" id="id_customer" class="form-control">
+                                        <option value="">--- Pilih Customer ---</option>
+                                        <% customer.forEach(c => { %>
+                                            <option value="<%= c.id_customer %>"><%= c.nama %></option>
+                                        <% }); %>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="id_provinsi">Provinsi</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select name="id_provinsi" id="id_provinsi" class="form-control">
+                                        <option value="">--- Pilih Provinsi ---</option>
+                                        <% provinsi.forEach(p => { %>
+                                            <option value="<%= p.id_provinsi %>"><%= p.nama_provinsi %></option>
+                                        <% }); %>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="id_kota">Kota</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select name="id_kota" id="id_kota" class="form-control">
+                                        <!-- Kota options  -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="detail_alamat">Detail Alamat</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="detail_alamat" id="detail_alamat" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="kode_pos">Kode Pos</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="text" name="kode_pos" id="kode_pos" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="tanggal_pengiriman">Tanggal Pengiriman</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="date" name="tanggal_pengiriman" id="tanggal_pengiriman" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="tanggal_diterima">Tanggal Diterima</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <input type="date" name="tanggal_diterima" id="tanggal_diterima" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-3 mb-3">
+                                    <label for="status_pengiriman">Status Pengiriman</label>
+                                </div>
+                                <div class="col-md-8">
+                                    <select name="status_pengiriman" id="status_pengiriman" class="form-control">
+                                        <option value="Dalam Pengiriman">Dalam Pengiriman</option>
+                                        <option value="Diterima">Diterima</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <input type="submit" name="submit" id="btn-add" class="btn btn-primary" />
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Main Content -->
+  
+              <!-- Footer -->
+              <footer class="sticky-footer bg-white">
+                  <div class="container my-auto">
+                      <div class="copyright text-center my-auto">
+                          <span>Copyright &copy; Abadi Jaya</span>
+                      </div>
+                  </div>
+              </footer>
+              <!-- End of Footer -->
+  
+          </div>
+          <!-- End of Content Wrapper -->
+  
+      </div>
+      <!-- End of Page Wrapper -->
+  
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+          <i class="fas fa-angle-up"></i>
+      </a>
+  
+      <!-- Logout Modal-->
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                  <div class="modal-footer">
+                      <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                      <a class="btn btn-primary" href="login.html">Logout</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Bootstrap core JavaScript-->
+      <script src="../../bootstrap/vendor/jquery/jquery.min.js"></script>
+      <script src="../../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+      <!-- Core plugin JavaScript-->
+      <script src="../../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+      <!-- Custom scripts for all pages-->
+      <script src="../../bootstrap/js/sb-admin-2.min.js"></script>
+  
+      <!-- Page level plugins -->
+      <script src="../../bootstrap/vendor/chart.js/Chart.min.js"></script>
+  
+      <!-- Page level custom scripts -->
+      <script src="../../bootstrap/js/demo/chart-area-demo.js"></script>
+      <script src="../../bootstrap/js/demo/chart-pie-demo.js"></script>
+  
+      <script src="../../index.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,33 @@
+<main role="main" class="container">
+    <h1>Tambah Data Provinsi</h1>
+    <div class="card shadow col-md-6">
+        <div class="card-header">
+            <h4 class="text-primary">Detail Provinsi</h4>
+        </div>
+        <div class="card-body">
+            <form action="/AddProvinsi" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="kode" class="form-label">Kode Provinsi</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="kode" id="kode" placeholder="Masukkan Kode Provinsi" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="nama" class="form-label">Nama</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="nama" id="nama" placeholder="Masukkan Nama Provinsi" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="submit" value="Kirim" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

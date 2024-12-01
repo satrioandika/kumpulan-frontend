@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--? Styles CSS -->
+		<link rel="stylesheet" href="style.css" />
+
+		<!--? Boostrap -->
+		<link rel="stylesheet" href="../boostrap/dist/css/bootstrap.min.css" />
+
+		<!--? Font Googleapis -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!--? Icon Awesome -->
+		<script
+			src="https://kit.fontawesome.com/c0ad9aaa27.js"
+			crossorigin="anonymous"
+		></script>
+
+		<style>
+			.img-stuktur {
+				margin: auto;
+				margin-top: 150px;
+			}
+			.img-stuktur img {
+				width: 100%;
+				height: auto;
+				border: 2px solid black;
+				border-radius: 20px;
+			}
+            .card{
+                width: 90%;
+                box-shadow: -5px -1px 6px -2px rgba(0,0,0,0.75);
+            }
+            
+		</style>
+
+		<title>Struktur Organisasi | Astra</title>
+	</head>
+	<body  class="bg-body-tertiary">
+		<header>
+			<!--* Navigasi-->
+			<nav
+				id="navbar"
+				class="navbar navbar-expand-lg shadow fixed-top px-0 py-0 mb-2"
+			>
+				<div class="container">
+					<a class="navbar-brand" href="#home">
+						<img
+							class="img-fluid"
+							src="../assets/img/Astraworld-logo.png"
+							alt="astra-world"
+							width="209"
+							height="48"
+						/>
+					</a>
+					<div
+						class="collapse navbar-collapse justify-content-md-end"
+						id="navbarNav"
+					>
+						<ul class="navbar-nav nav gap-3">
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									href="../index.html"
+									>Home</a
+								>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="../About-dina/about.html"
+									>About Us</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									href="../Service-rapid/OurService.html"
+									>Our Service</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									href="../Home-jaki_satrio/struktur.html"
+									>Stuktur</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									href="../Home-jaki_satrio/contact.html"
+									>Contact Us</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- * Navigasi END-->
+		</header>
+
+		<main>
+			<div class="container d-flex flex-column justify-content-center align-items-center gap-5 pb-5 img-stuktur">
+                <h1 style="text-align: center; font-weight: 700">STRUKTUR ORGANISASI</h1>
+				<div class="card p-5 rounded-5">
+					<img src="../assets/img/stuktur.jpg" alt="" />
+				</div>
+			</div>
+		</main>
+
+		<footer
+			class="container-fluid py-5 px-0 pb-0"
+			style="background-color: #121a27; border-radius: 0 50px 0 0"
+		>
+			<div class="container">
+				<div class="row gx-5">
+					<div class="col-6">
+						<div class="mb-5">
+							<img
+								src="../assets/img/logo-footer.png"
+								alt=""
+								width="300px"
+							/>
+							<p class="pt-3" style="color: #fff">
+								AstraWorld berdiri di Jakarta, pada 2 Februari 2002
+								sebagai unit bisnis PT Astra International Tbk yang
+								bertujuan memberikan nilai tambah bagi pelanggan PT
+								Astra International Tbk. Nilai tambah tersebut diberikan
+								dalam bentuk layanan-layanan yang menjadikan saat-saat
+								memiliki dan mengendarai mobil menjadi semakin aman dan
+								nyaman, sehingga pelanggan merasakan "Peace of Mind on
+								the Road"
+							</p>
+						</div>
+					</div>
+
+					<div class="col-6">
+						<div class="mb-5 mt-3">
+							<h1 style="color: #fff">Sosial Media</h1>
+							<div class="d-flex gap-4 cos-icon">
+								<i class="fa-brands fa-whatsapp fa-3x" onclick="window.location.href='https://wa.me/+62895381500898'"></i>
+								<i class="fa-brands fa-instagram fa-3x" onclick="window.location.href='https://www.instagram.com/astraworld/'"></i>
+								<i class="fa-brands fa-square-facebook fa-3x" onclick="window.location.href='https://www.facebook.com/astraworld/'"></i>
+								<i class="fa-brands fa-square-x-twitter fa-3x" onclick="window.location.href='https://x.com/AstraWorld'"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="custel-hacip">
+				<p>Hak Cipta &copy; 2024</p>
+			</div>
+		</footer>
+
+		<!--* Script Boostrap -->
+		<script src="../boostrap/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- SCRIPT -->
+		<script>
+			window.addEventListener("scroll", function () {
+				const navbar = document.getElementById("navbar");
+				if (
+					document.body.scrollTop > 20 ||
+					document.documentElement.scrollTop > 20
+				) {
+					navbar.classList.add("scrolled");
+				} else {
+					navbar.classList.remove("scrolled");
+				}
+			});
+		</script>
+	</body>
+</html>

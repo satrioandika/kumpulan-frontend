@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web APP</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <main>
+        <label>Nama :</label>
+        <input type="text" id="input-nama">
+        <button id="add-nama-btn">Tambah Nama</button>
+        <br><br><br>
+        <div>
+            <input type="text" placeholder="Cari Nama" id="search-input">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <table>
+            <thead>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Tanggal</th>
+                <th>Edit</th>
+                <th>Hapus</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label for="">Nama :</label>
+            <input type="text" id="update-input-nama">
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

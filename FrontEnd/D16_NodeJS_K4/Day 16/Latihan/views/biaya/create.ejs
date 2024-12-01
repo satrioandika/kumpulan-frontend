@@ -1,0 +1,57 @@
+<main role="main" class="container">
+    <h1>Tambah Data Customer</h1>
+    <div class="card shadow col-md-6">
+        <div class="card-header">
+            <h4 class="text-primary">Detail Biaya</h4>
+        </div>
+        <div class="card-body">
+            <form action="/AddBiaya" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="id_biaya" class="form-label">Id_biaya</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="id_biaya" id="id_biaya" placeholder="Masukkan ID" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="jenis_pengiriman" class="form-label">Jenis Pengiriman</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="jenis_pengiriman" id="jenis_pengiriman" placeholder="Masukkan Jenis Pengiriman" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="berat_min" class="form-label">Berat Minimal</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="berat_min" id="berat_min" placeholder="Masukkan berat minimal" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="berat_max" class="form-label">Berat Maksimal</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="berat_max" id="berat_max" placeholder="Masukkan berat maksimal" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="biaya" class="form-label">Biaya</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="biaya" id="biaya" placeholder="Masukkan biaya" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="submit" value="Kirim" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

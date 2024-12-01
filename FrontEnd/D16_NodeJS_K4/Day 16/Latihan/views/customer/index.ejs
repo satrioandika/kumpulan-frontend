@@ -1,0 +1,49 @@
+<main role="main" class="container">
+    <h2>Daftar Customer</h2>
+    <a href="/AddCustomer" class="btn btn-primary">Tambah Customer</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Nama</th>
+                <th scope="col">Email</th>
+                <th scope="col">No. Telp</th>
+                <th scope="col">Provinsi</th>
+                <th scope="col">Kota</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">Kode Pos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% customers.forEach(customer=> { %>
+                <tr>
+                    <td>
+                        <%= customer.nama %>
+                    </td>
+                    <td>
+                        <%= customer.email %>
+                    </td>
+                    <td>
+                        <%= customer.nomor_telepon %>
+                    </td>
+                    <td>
+                        <%= customer.id_provinsi %>
+                    </td>
+                    
+                    <td>
+                        <%= customer.id_kota %>
+                    </td>
+                    <td>
+                        <%= customer.alamat %>
+                    </td>
+                    <td>
+                        <%= customer.kode_pos %>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i> Edit</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>

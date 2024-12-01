@@ -1,0 +1,56 @@
+<main role="main" class="container">
+    <h2>Daftar Pengiriman</h2>
+    <a href="/AddPengiriman" class="btn btn-primary">Tambah Pengiriman</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id Pengiriman</th>
+                <th scope="col">Id Paket</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Customer</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">Tanggal Pengiriman</th>
+                <th scope="col">Tanggal Diterima</th>
+                <th scope="col">Status</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <% pengirimans.forEach(pengiriman=> { %>
+                <tr>
+                    <td>
+                        <%= pengiriman.id_pengiriman %>
+                    </td>
+                    <td>
+                        <%= pengiriman.id_paket %>
+                    </td>
+                    <td>
+                        <%= pengiriman.qty %>
+                    </td>
+                    <td>
+                        <%= pengiriman.customer %>
+                    </td>
+                    <td>
+                        <%= pengiriman.alamat %>
+                    </td>
+                    <td>
+                        <%= pengiriman.tanggal_pengiriman %>
+                    </td>
+                    <td>
+                        <%= pengiriman.tanggal_diterima %>
+                    </td>
+                    <td>
+                        <%= pengiriman.status %>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i> Edit</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main> 
+
+
+

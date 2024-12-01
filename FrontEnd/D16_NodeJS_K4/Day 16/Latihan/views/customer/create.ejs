@@ -1,0 +1,73 @@
+<main role="main" class="container">
+    <h1>Tambah Data Customer</h1>
+    <div class="card shadow col-md-6">
+        <div class="card-header">
+            <h4 class="text-primary">Detail Customer</h4>
+        </div>
+        <div class="card-body">
+            <form action="/AddCustomer" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="nama" class="form-label">Nama</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="email" id="email" placeholder="Masukkan Email" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="nomor_telepon" class="form-label">No. Telp</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="nomor_telepon" id="nomor_telepon" placeholder="Masukkan nomor_telepon" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="id_provinsi" class="form-label">Provinsi</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="id_provinsi" id="id_provinsi" placeholder="Masukkan ID Provinsi" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="id_kota" class="form-label">Kota</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="id_kota" id="id_kota" placeholder="Masukkan ID Kota" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="alamat" class="form-label">Alamat</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="alamat" id="alamat" placeholder="Masukkan Alamat" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="kode_pos" class="form-label">Kode Pos</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="kode_pos" id="kode_pos" placeholder="Masukkan Kode Pos" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="submit" value="Kirim" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

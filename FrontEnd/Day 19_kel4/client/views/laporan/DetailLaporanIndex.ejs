@@ -1,0 +1,307 @@
+<%- include('../template/head') %>
+
+                <div class="container-fluid mb-5">
+                    <a href="/laporan" class="btn btn-md btn-secondary"><i class="fa fa-arrow-left"></i> KEMBALI</a>
+                  <div class="card mt-3 mb-3">
+                    <div class="card shadow-mb4">
+                      <div class="card-header bg-primary text-light"><h4>Detail Laporan</h4></div>
+                      <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="id_vendor">ID Pengiriman</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="id_pengiriman">: <%= laporans.id_pengiriman %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="id_vendor">ID Vendor</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="id_vendor">: <%= laporans.id_vendor %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="nama_vendor">Nama Vendor</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="nama_vendor">: <%= laporans.nama_vendor %></label>
+                                    </div>
+                                    <span>------------------------------------------------------------------</span>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="jenis_pengiriman">Jenis Pengiriman</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="jenis_pengiriman">: <%= laporans.jenis_pengiriman %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="berat_min">Berat Minimal</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="berat_min">: <%= laporans.berat_min %> Kg</label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="berat_max">Berat Maksimal</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="berat_max">: <%= laporans.berat_max %> Kg</label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="biaya_pengiriman">Biaya Pengiriman</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="biaya_pengiriman">: <%= laporans.biaya_pengiriman %></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="id_paket">ID Paket</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="id_paket">: <%= laporans.id_paket %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="nama_paket">Nama Paket</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="nama_paket">: <%= laporans.nama_paket %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="deskripsi_paket">Deskripsi Paket</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="deskripsi_paket">: <%= laporans.deskripsi_paket %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="berat_paket">Berat Paket</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="berat_paket">: <%= laporans.berat_paket %> Kg</label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="dimensi_paket">Dimensi Paket</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="dimensi_paket">: <%= laporans.dimensi_paket %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="harga_paket">Harga Paket</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="harga_paket">: <%= laporans.harga_paket %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="qty">Quantity</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="qty">: <%= laporans.qty %></label>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-4">
+                                        <label for="total_harga">Total Harga</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <label for="total_harga">: <%= (laporans.harga_paket * laporans.qty) %></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <span>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</span>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="nama_customer">Customer</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="nama_customer">: <%= laporans.nama_customer %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="kontak_customer">Kontak Customer</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="kontak_customer">: <%= laporans.kontak_customer %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="id_provinsi">ID Provinsi</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="id_provinsi">: <%= laporans.id_provinsi %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="nama_provinsi">Nama Provinsi</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="nama_provinsi">: <%= laporans.nama_provinsi %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="id_kota">ID Kota</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="id_kota">: <%= laporans.id_kota %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="nama_kota">Nama Kota</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="nama_kota">: <%= laporans.nama_kota %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="jenis">Jenis</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="jenis">: <%= laporans.jenis %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="detail_alamat">Detail Alamat</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="detail_alamat">: <%= laporans.detail_alamat %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="kode_pos">Kode Pos</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="kode_pos">: <%= laporans.kode_pos %></label>
+                            </div>
+                            <span>----------------------------------------------------------</span>
+                        </div>
+                        <% 
+                            const tanggalKirim = new Date(laporans.tanggal_pengiriman).toString() !== 'Invalid Date' ? new Date(laporans.tanggal_pengiriman).toISOString().split('T')[0] : 'Tanggal tidak valid';
+                            const tanggalTerima = new Date(laporans.tanggal_diterima).toString() !== 'Invalid Date' ? new Date(laporans.tanggal_diterima).toISOString().split('T')[0] : 'Tanggal tidak valid';
+                        %>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="status_pengiriman">Status Pengiriman</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="status_pengiriman">: <%= laporans.status_pengiriman %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="tanggal_pengiriman">Tanggal Pengiriman</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="tanggal_pengiriman">: <%= tanggalKirim %></label>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-2">
+                                <label for="tanggal_diterima">Tanggal Diterima</label>
+                            </div>
+                            <div class="col-md-10">
+                                <label for="tanggal_diterima">: <%= tanggalTerima %></label>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Main Content -->
+  
+              <!-- Footer -->
+              <footer class="sticky-footer bg-white">
+                  <div class="container my-auto">
+                      <div class="copyright text-center my-auto">
+                          <span>Copyright &copy; Abadi Jaya</span>
+                      </div>
+                  </div>
+              </footer>
+              <!-- End of Footer -->
+  
+          </div>
+          <!-- End of Content Wrapper -->
+  
+      </div>
+      <!-- End of Page Wrapper -->
+  
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+          <i class="fas fa-angle-up"></i>
+      </a>
+  
+      <!-- Logout Modal-->
+      <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                      <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">×</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                  <div class="modal-footer">
+                      <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                      <a class="btn btn-primary" href="login.html">Logout</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Bootstrap core JavaScript-->
+      <script src="../../bootstrap/vendor/jquery/jquery.min.js"></script>
+      <script src="../../bootstrap/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+      <!-- Core plugin JavaScript-->
+      <script src="../../bootstrap/vendor/jquery-easing/jquery.easing.min.js"></script>
+  
+      <!-- Custom scripts for all pages-->
+      <script src="../../bootstrap/js/sb-admin-2.min.js"></script>
+  
+      <!-- Page level plugins -->
+      <script src="../../bootstrap/vendor/chart.js/Chart.min.js"></script>
+  
+      <!-- Page level custom scripts -->
+      <script src="../../bootstrap/js/demo/chart-area-demo.js"></script>
+      <script src="../../bootstrap/js/demo/chart-pie-demo.js"></script>
+  
+      <script src="number_format.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,57 @@
+<main role="main" class="container">
+    <h1>Tambah Data User</h1>
+    <div class="card shadow col-md-6">
+        <div class="card-header">
+            <h4 class="text-primary">Detail User</h4>
+        </div>
+        <div class="card-body">
+            <form action="/AddUser" method="post">
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="nama" class="form-label">Nama</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="username" class="form-label">Username</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="username" id="username" placeholder="Masukkan Username" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="Password" class="form-label">Password</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="Password" id="Password" placeholder="Masukkan Password" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="kontak" class="form-label">Kontak</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="kontak" id="kontak" placeholder="Masukkan Kontak" class="form-control">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-2">
+                        <label for="role" class="form-label">Role</label>
+                    </div>
+                    <div class="col-md-10">
+                        <input type="text" name="role" id="role" placeholder="Masukkan Role" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <input type="submit" value="Kirim" class="btn btn-primary">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

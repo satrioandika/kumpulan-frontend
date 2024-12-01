@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <main role="main" class="container">
+        <h1 class="mt-5">My Paket</h1>
+        <h2>Daftar Paket</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id_paket</th>
+                    <th scope="col">id_vendor</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col">Deskripsi</th>
+                    <th scope="col">Berat</th>
+                    <th scope="col">Dimensi</th>
+                    <th scope="col">Harga</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% myPakets.forEach(paket => { %>
+                    <tr>
+                        <td>
+                            <%= paket.id_paket %>
+                        </td>
+                        <td>
+                            <%= paket.id_vendor %>
+                        </td>
+                        <td>
+                            <%= paket.nama %>
+                        </td>
+                        <td>
+                            <%= paket.deskripsi %>
+                        </td>
+                        <td>
+                            <%= paket.berat %>
+                        </td>
+                        <td>
+                            <%= paket.dimensi %>
+                        </td>
+                        <td>
+                            <%= paket.harga %>
+                        </td>
+                        <td>
+                            <%= paket.status %>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>            
+        </table>
+    </main>
+</body>
+</html>

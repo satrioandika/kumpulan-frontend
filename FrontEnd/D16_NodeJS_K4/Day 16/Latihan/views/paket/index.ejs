@@ -1,0 +1,49 @@
+<main role="main" class="container">
+    <h2>Data Paket</h2>
+    <a href="/AddPaket" class="btn btn-primary">Tambah Paket</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Vendor</th>
+                <th scope="col">Nama</th>
+                <th scope="col">Deskripsi</th>
+                <th scope="col">Berat</th>
+                <th scope="col">Dimensi</th>
+                <th scope="col">Harga</th>
+                <th scope="col">Status</th>
+                <th scope="col">Tindakan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% pakets.forEach(paket=> { %>
+                <tr>
+                    <td>
+                        <%= paket.id_vendor %>
+                    </td>
+                    <td>
+                        <%= paket.nama %>
+                    </td>
+                    <td>
+                        <%= paket.deskripsi %>
+                    </td>
+                    <td>
+                        <%= paket.berat %>
+                    </td>
+                    <td>
+                        <%= paket.dimensi %>
+                    </td>
+                    <td>
+                        <%= paket.harga %>
+                    </td>
+                    <td>
+                        <%= paket.status %>
+                    </td>
+                    <td>
+                        <a href="" class="btn btn-sm btn-warning"><i class="fa fa-pen"></i> Edit</a>
+                        <a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+                    </td>
+                </tr>
+            <% }); %>
+        </tbody>
+    </table>
+</main>

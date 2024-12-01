@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* ============================== */
+nav a{
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+nav a:hover{
+    color: #121A27 !important;
+    transform: scale(1.06);
+    text-shadow: -3px 1px 16px rgba(0,0,0,0.6);
+}
+
+nav a::after{
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    background: #00ADE6;
+    transition: width 0.3s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px
+}
+
+nav a:hover::after{
+    width: 75%;
+}
+
+/* ============================= */
+#navbar {
+    background-color: rgba(251, 251, 251, 0.1);
+    transition: background-color 0.3s;
+}
+#navbar.scrolled {
+    background-color: #242d3b;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #505050 !important;
+}
+#navbar.scrolled .navbar-brand,
+#navbar.scrolled .nav-link {
+    color: #e0e0e0 !important;
+}
+
+.thumb-home{
+    padding-top: 50px !important;
+    width: 1140px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thumb-home h1{
+    font-size: 14px;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    padding: 7px;
+}
+
+.thumb-home h2{
+    font-size: 30px;
+    font-weight: bold !important;
+    color: #4d4d4d;
+}
+
+.thumb-home p{
+    font-size: 14px;
+    font-style: italic;
+    color: #888888;
+    width: 40%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.custom-card{
+    width: 18rem; 
+    max-height: 500px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.custom-card:hover i,
+.custom-card:hover h5,
+.custom-card:hover p {
+    color: white !important;
+    transition: color 0.5s ease-in-out;
+}
+
+.custom-card:hover{
+    background-color: #45a3d8;
+    transform: scale(1.05);
+}
+
+/*! ------------------------------------------------ */
+.thumb-bulat {
+    width: 1140px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.thumb-bulat h2 {
+    padding-top: 60px;
+    font-size: 30px;
+    font-weight: bold !important;
+    color: #4d4d4d;
+    margin-bottom: 40px;
+}
+
+.thumb-bulat p {
+    font-size: 14px;
+    font-style: italic;
+    color: #888888;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.custom-card-bulat {
+    width: 100%;
+    border: none !important;
+    background-color: rgba(18, 26, 39, 0) !important;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.custom-card-bulat:hover {
+    transform: scale(1.1);
+}
+
+#partner-home {
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 240px;
+    margin-top: 80px;
+    background: url(../assets/img/partner-awo.png) no-repeat center;
+}
+
+#partner-home h2 {
+    font-size: 30px;
+    font-weight: bold !important;
+    color: #4d4d4d;
+}
+
+/* Style Footer */
+.cos-icon i{
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.cos-icon i:hover{
+    /* color: #4c4c4c; */
+    cursor: pointer;
+    transform: translateY(-7px) rotate(20deg);
+}
+
+.custel-hacip {
+    text-align: center;
+    background-color: #121A27;
+    color: whitesmoke;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid;
+}
